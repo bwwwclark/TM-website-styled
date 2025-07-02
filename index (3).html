@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Todd Miller Realty</title>
+<link href="todd-miller-style-guide.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+    .image-grid img:nth-child(1) { height: 200px; }
+    .image-grid img:nth-child(2) { height: 250px; }
+    .image-grid img:nth-child(3) { height: 300px; }
+    .image-grid img:nth-child(4) { height: 180px; }
+    .image-grid img {
+      object-fit: cover;
+      width: 100%;
+      border-radius: 1rem;
+    }
+    .split-section {
+      background-color: #050530;
+      padding: 4rem 2rem;
+      color: white;
+    }
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: start;
+    }
+    .split-card img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .split-card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+    .split-card p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+    .split-card .button {
+      background-color: var(--color-blue-button);
+      color: var(--color-inverse-section);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.75rem;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .split-card .button:hover {
+      background-color: #60c1ff;
+    }
+    .testimonial-section {
+      background-color: #edf2f7;
+      padding: 4rem 2rem;
+      font-family: 'Manrope', sans-serif;
+    }
+    .testimonial-card {
+      display: flex;
+      flex-direction: row;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      max-width: 1200px;
+      margin: 0 auto 2rem;
+    }
+    .testimonial-card img {
+      width: 50%;
+      object-fit: cover;
+    }
+    .testimonial-content {
+      padding: 2rem;
+      flex: 1;
+    }
+    .testimonial-content p {
+      font-size: 16px;
+      color: #2d3748;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .testimonial-content a {
+      color: #3182ce;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .profile-selectors {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .profile-card {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: #f7fafc;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .profile-card.active {
+      background-color: #4bb6f4;
+      color: white;
+    }
+    .profile-card img {
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+    .profile-card .info span:first-child {
+      font-weight: 600;
+      display: block;
+    }
+    .profile-card .info span:last-child {
+      font-size: 12px;
+      color: #718096;
+    }
+    .profile-card.active .info span:last-child {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<header class="site-header" style="background: #050530; padding: 1rem 2rem;">
+<nav style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+<div>
+<img alt="Todd Miller Realty" src="tm_logo.png" style="max-height: 50px;"/>
+</div>
+<div style="display: flex; gap: 1.5rem;">
+<a href="index.html" style="color: white; text-decoration: none; font-family: 'Manrope', sans-serif; font-weight: 600;">Home</a>
+<a href="about-us.html" style="color: white; text-decoration: none; font-family: 'Manrope', sans-serif; font-weight: 600;">About Us</a>
+<a href="services.html" style="color: white; text-decoration: none; font-family: 'Manrope', sans-serif; font-weight: 600;">Services</a>
+<a href="virtual-office.html" style="color: white; text-decoration: none; font-family: 'Manrope', sans-serif; font-weight: 600;">Virtual Offices</a>
+<a href="listings.html" style="color: white; text-decoration: none; font-family: 'Manrope', sans-serif; font-weight: 600;">Listings</a>
+<a href="contact.html" style="color: white; text-decoration: none; font-family: 'Manrope', sans-serif; font-weight: 600;">Contact</a>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="hero-section">
+<div class="image-grid">
+<img alt="Balcony" src="balcony.jpg"/>
+<img alt="Building" src="building.jpg"/>
+<img alt="Palm Trees" src="palm.jpg"/>
+<img alt="Parking" src="parking.jpg"/>
+</div>
+<div class="hero-text">
+<h1>Todd Miller Realty</h1>
+<p>Flexible office rentals, leasing, property sales, and management—tailored for your business needs. Explore professional solutions in one place.</p>
+</div>
+</section>
+<!-- Services Section -->
+<section class="services-section">
+<div class="section-label">What We Offer</div>
+<h2>Commercial real estate, simplified</h2>
+<div class="services-grid">
+<div class="service-card"><div class="icon">📄</div><h3>Virtual office solutions</h3><p>Professional business addresses and mail handling for remote teams.</p></div>
+<div class="service-card"><div class="icon">✨</div><h3>Flexible office leasing</h3><p>Modern workspaces in key locations for any team size.</p></div>
+<div class="service-card"><div class="icon">💬</div><h3>Commercial property sales</h3><p>Guided property purchases from search to closing.</p></div>
+<div class="service-card"><div class="icon">❄️</div><h3>Property management</h3><p>Full-service management for commercial properties.</p></div>
+<div class="service-card"><div class="icon">❤️</div><h3>Tenant placement</h3><p>Efficient tenant sourcing and leasing support.</p></div>
+<div class="service-card"><div class="icon">📍</div><h3>Real estate consulting</h3><p>Expert advice on investments and market trends.</p></div>
+</div>
+<button class="cta-button">Contact us</button>
+</section>
+<!-- Split Cards Section -->
+<section class="split-section">
+<div class="split-grid">
+<div class="split-card">
+<img alt="Virtual Office" src="office.jpg"/>
+<h3>Virtual offices, real flexibility</h3>
+<p>Access virtual offices or dedicated workspaces tailored for your business. Enjoy streamlined setup and ongoing support for daily operations.</p>
+<button class="button">See plans</button>
+</div>
+<div class="split-card">
+<img alt="Lease or Buy" src="CPAs.jpg"/>
+<h3>Lease or buy with confidence</h3>
+<p>Discover commercial spaces for lease or purchase. Get clear guidance and straightforward processes for your business property needs.</p>
+<button class="button">Browse spaces</button>
+</div>
+</div>
+</section>
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+<div class="testimonial-card">
+<img alt="Testimonial image" src="dr-shahrad-mabourakh-md.jpg"/>
+<div class="testimonial-content">
+<h4><img alt="West Broward Internal Medicine" src="" style="height: 30px"/></h4>
+<p>"We can always count on Todd and his team for prompt and reliable service whenever we need them. We know we can relax when they are on the case."</p>
+<a href="#">Learn more</a>
+</div>
+</div>
+<div class="profile-selectors">
+<div class="profile-card active">
+<img alt="Dr. Shahrad Mabourakh" src="wbim-logo.png"/>
+<div class="info"><span>Dr. Shahrad Mabourakh, MD</span><span>Medical Director</span></div>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="contact-section">
+<h2>Get in Touch</h2>
+<form class="contact-form">
+<label for="name">Name</label>
+<input id="name" name="name" type="text"/>
+<label for="email">Email Address</label>
+<input id="email" name="email" type="email"/>
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="Example Text" rows="5"></textarea>
+<button type="submit">Submit</button>
+</form>
+</section>
+<footer class="site-footer">
+  <div class="footer-container" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem; line-height: 1.3;">
+    
+    <!-- Logo on the left -->
+  <div class="footer-logo" style="flex: 1; min-width: 200px;">
+      <img src="tm_logo_orig.png" alt="Logo Icon" style="height: 50px;" />
+    </div>
+
+
+    <!-- Contact Info Columns -->
+    <div style="display: flex; flex: 2; gap: 4rem; flex-wrap: wrap;">
+      <!-- Column 1 -->
+      <div style="min-width: 220px;">
+        <p><strong>Hours:</strong> Mon – Fri: 9am – 5pm</p>
+        <p><strong>Email:</strong> <a href="mailto:toddmillermanagement@yahoo.com">toddmillermanagement@yahoo.com</a></p>
+        <p><strong>Address:</strong> 7777 Davie Rd. Ext, Suite 302B, Hollywood, FL 33024</p>
+      </div>
+      <!-- Column 2 -->
+      <div style="min-width: 220px;">
+        <p><strong>Phone:</strong> (954) 437-5001</p>
+        <p><strong>Fax:</strong> (954) 437-5099</p>
+        <p><strong>Toll Free:</strong> (888) 260-5747</p>
+      </div>
+    </div>
+    
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Todd Miller Realty</title>
+  <link rel="stylesheet" href="todd-miller-style-guide.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-info {
+      background-color: var(--color-section-bg);
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 1rem;
+    }
+    .contact-info p {
+      font-size: var(--font-body-size);
+      line-height: var(--font-body-line);
+      color: #2d3748;
+      margin: 0.5rem 0;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 2rem;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header" style="background: #050530; padding: 1rem 2rem;">
+  <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+    <div>
+      <img alt="Todd Miller Realty" src="tm_logo.png" style="max-height: 50px;" />
+    </div>
+    <div style="display: flex; gap: 1.5rem;">
+      <a href="index.html" style="color: white; text-decoration: none; font-weight: 600;">Home</a>
+      <a href="about-us.html" style="color: white; text-decoration: none; font-weight: 600;">About Us</a>
+      <a href="services.html" style="color: white; text-decoration: none; font-weight: 600;">Services</a>
+      <a href="virtual-office.html" style="color: white; text-decoration: none; font-weight: 600;">Virtual Offices</a>
+      <a href="listings.html" style="color: white; text-decoration: none; font-weight: 600;">Listings</a>
+      <a href="contact.html" style="color: white; text-decoration: none; font-weight: 600;">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="contact-info">
+  <h2>Contact Information</h2>
+  <p><strong>Address:</strong> 7777 Davie Road Ext #302B, Hollywood, FL 33024</p>
+  <p><strong>Phone:</strong> (954) 437‑5001 or (954) 289‑6233</p>
+  <p><strong>Email:</strong> info@toddmillerrealty.com</p>
+
+  <iframe
+    src="https://www.google.com/maps?q=7777+Davie+Road+Ext+%23302B,+Hollywood,+FL+33024&output=embed"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+
+<section class="contact-section">
+  <h2>Get in Touch</h2>
+  <form class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 2rem; line-height: 1.3;">
+    
+    <!-- Logo on the left -->
+  <div class="footer-logo" style="flex: 1; min-width: 200px;">
+      <img src="tm_logo_orig.png" alt="Logo Icon" style="height: 50px;" />
+    </div>
+
+
+    <!-- Contact Info Columns -->
+    <div style="display: flex; flex: 2; gap: 4rem; flex-wrap: wrap;">
+      <!-- Column 1 -->
+      <div style="min-width: 220px;">
+        <p><strong>Hours:</strong> Mon – Fri: 9am – 5pm</p>
+        <p><strong>Email:</strong> <a href="mailto:toddmillermanagement@yahoo.com">toddmillermanagement@yahoo.com</a></p>
+        <p><strong>Address:</strong> 7777 Davie Rd. Ext, Suite 302B, Hollywood, FL 33024</p>
+      </div>
+      <!-- Column 2 -->
+      <div style="min-width: 220px;">
+        <p><strong>Phone:</strong> (954) 437-5001</p>
+        <p><strong>Fax:</strong> (954) 437-5099</p>
+        <p><strong>Toll Free:</strong> (888) 260-5747</p>
+      </div>
+    </div>
+    
+  </div>
+</footer>
+</body>
+</html>
